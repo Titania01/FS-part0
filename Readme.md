@@ -1,5 +1,5 @@
-## FS_PART0
-** one of the Projects of the FullStackOpen
+# FS_PART0
+**One of the Projects of the FullStackOpen**
 ## Built with 
 - HTML
 ## AUTHOR
