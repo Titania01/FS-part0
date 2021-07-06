@@ -1,15 +1,22 @@
-title Creating New Note (SPA VERSION) note left of Browser: user typed in a new
-note into the input field and clicked save button to put it into Browser end
-note Browser->Server: HTTP GET
-https://studies.cs.helsinki.fi/exampleapp/new_note_spa note right of Server:
-Server accepted and saved the new note end note note left of Browser: Browser
-sends the note to the Server end note Browser->Server:Request URL:
-https://studies.cs.helsinki.fi/exampleapp/spa Server-->Browser: HTML-code
+title Creating New Note (SPA VERSION) 
+note left of Browser: user entered the SPA version of the notes app 
+end note 
+Browser->Server:HTTP GET Request URL:
+https://studies.cs.helsinki.fi/exampleapp/spa 
+note right of server: generated the HTML code for existing notes, to the browser
+end note
+Server-->Browser: HTML-code
 Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
-Server-->Browser: main.css Browser->Server: HTTP GET
-https://studies.cs.helsinki.fi/exampleapp/spa.js Server-->Browser: spa.js note
+Server-->Browser: main.css 
+Browser->Server: HTTP GET
+https://studies.cs.helsinki.fi/exampleapp/spa.js 
+note left of Browser: The browser tackles this task by executing the JavaScript code found in HTML page it fetched from the server
+Server-->Browser: spa.js note
 over Browser: Browser starts executing js-code that requests JSON data from
-Server end note Browser->Server: HTTP GET
+Server 
+end note 
+Browser->Server: HTTP GET
 https://studies.cs.helsinki.fi/exampleapp/data.json Server-->Browser:
 [{"content":"Badmus","date":"2021-02-02T15:09:41.898Z"}, ...] note over Browser:
-Browser executes the event handler that renders notes to display end note
+Browser executes the event handler that renders notes to display 
+end note
